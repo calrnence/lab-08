@@ -50,10 +50,10 @@ class WizardTest {
     @Test
     fun train_unsuccessful_noMana() {
         evilWizard.spellPower = 10
-        evilWizard.mana = 10 // Evil Wizard does not have enough mana to train
+        evilWizard.mana = 4 // Evil Wizard does not have enough mana to train
         evilWizard.train()
         assertEquals(10, evilWizard.spellPower)
-        assertEquals(10, evilWizard.mana)
+        assertEquals(4, evilWizard.mana)
     }
 
     @Test
